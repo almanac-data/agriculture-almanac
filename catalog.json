@@ -7,47 +7,59 @@
   },
   "entries": [
     {
-      "id": "example-dataset",
+      "id": "faostat",
       "type": "dataset",
-      "title": "Example Dataset (replace this with a real entry)",
-      "description": "A placeholder catalog entry so the index builds and CI passes on a fresh template. Delete this file once you have added your first real dataset.\n",
-      "publisher": "Example Agency",
+      "title": "FAOSTAT",
+      "description": "The UN Food and Agriculture Organization's global statistical database covering agricultural production, trade, land use, and food security for nearly every country and territory.\n",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
       "topics": [
-        "example"
+        "production",
+        "trade",
+        "land-use",
+        "food-security",
+        "global"
       ],
       "source": {
-        "canonical_url": "https://example.org"
+        "canonical_url": "https://www.fao.org/faostat/en/#data"
       },
       "access": {
         "method": [
-          "web"
+          "web",
+          "api",
+          "bulk"
         ],
         "auth_required": false,
         "auth_note": null,
         "rate_limit": null
       },
       "format": [
-        "html"
+        "csv",
+        "xml",
+        "json"
       ],
       "status": "live",
-      "status_since": "2026-06-29",
-      "status_source": "auto",
+      "status_since": "2026-07-01",
+      "status_source": "curator",
       "observed": {
-        "checked": "2026-06-29",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null,
+        "checked": "2026-07-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.fao.org/faostat/en/#data",
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
       "coverage": {
-        "spatial": "global",
-        "temporal": "n/a",
-        "cadence": "static"
+        "spatial": "global (nearly all UN member states)",
+        "temporal": "1961-present (domain-dependent)",
+        "cadence": "annual"
       },
-      "license": "CC0-1.0",
-      "attribution": "Example Agency",
-      "notes": "This is a template stub. See SETUP.md for how to stand up your own almanac vertical, then replace this entry with real datasets.\n"
+      "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
+      "attribution": "FAO, FAOSTAT",
+      "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
     }
   ]
 }
