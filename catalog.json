@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
     {
@@ -60,6 +60,59 @@
       "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
       "attribution": "FAO, FAOSTAT",
       "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "usda-nass-quick-stats",
+      "type": "dataset",
+      "title": "USDA NASS Quick Stats",
+      "description": "The National Agricultural Statistics Service's online database of official published aggregate estimates for U.S. agricultural production — crops, livestock, prices, demographics, and economics — at national, state, and county level, including Census of Agriculture results.\n",
+      "publisher": "U.S. Department of Agriculture, National Agricultural Statistics Service (USDA NASS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "production",
+        "crops",
+        "livestock",
+        "prices",
+        "county-level"
+      ],
+      "source": {
+        "canonical_url": "https://quickstats.nass.usda.gov/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "Web query tool is open; the Quick Stats API requires a free API key requested from the site.",
+        "rate_limit": "API returns at most 50,000 records per request (documented on the API page)."
+      },
+      "format": [
+        "csv",
+        "json",
+        "xml"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national, state, county; some sub-state districts)",
+        "temporal": "varies by series (historical series back to the 1800s for some commodities)",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA National Agricultural Statistics Service, Quick Stats",
+      "notes": "Human-verified 2026-10-31: site and API documentation page load (HTTP 200 via curl). API page documents the free key and the 50,000-record limit per call.\nUpdated as each NASS report is released, so cadence is recorded as event.\n"
     }
   ]
 }
