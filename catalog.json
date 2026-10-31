@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
     {
@@ -60,6 +60,57 @@
       "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
       "attribution": "FAO, FAOSTAT",
       "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "usda-nrcs-web-soil-survey",
+      "type": "dataset",
+      "title": "USDA NRCS Web Soil Survey",
+      "description": "The National Cooperative Soil Survey's authoritative soil maps and soil property data for most U.S. counties, delivered through an interactive area-of-interest tool with downloadable SSURGO soil survey data.\n",
+      "publisher": "U.S. Department of Agriculture, Natural Resources Conservation Service (USDA NRCS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "soils",
+        "land-use",
+        "conservation",
+        "geospatial"
+      ],
+      "source": {
+        "canonical_url": "https://websoilsurvey.nrcs.usda.gov/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "shapefile",
+        "mdb",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and territories (survey areas)",
+        "temporal": "current published soil survey data (refreshed annually)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA Natural Resources Conservation Service, Web Soil Survey",
+      "notes": "Human-verified 2026-10-31: HTTP 200; the root redirects to https://websoilsurvey.nrcs.usda.gov/app/. The NRCS SSURGO page (www.nrcs.usda.gov) timed out to curl this session, so this entry points at the Web Soil Survey delivery tool, not that description page.\n"
     }
   ]
 }
