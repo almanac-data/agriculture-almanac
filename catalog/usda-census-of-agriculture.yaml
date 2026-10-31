@@ -1,0 +1,44 @@
+id: usda-census-of-agriculture
+type: dataset
+title: USDA Census of Agriculture
+description: |
+  A complete count of U.S. farms and ranches and the people who operate them, taken every five years, covering land use and ownership, operator characteristics, production practices, income, and expenditures down to the county level.
+publisher: U.S. Department of Agriculture, National Agricultural Statistics Service (USDA NASS)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- census
+- farms
+- land-use
+- producers
+- county-level
+source:
+  canonical_url: https://www.nass.usda.gov/AgCensus/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- pdf
+- csv
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States, states, counties, and outlying areas
+  temporal: 1840-present (2002 and prior in the archived reports)
+  cadence: irregular
+license: public-domain (US Gov work)
+attribution: USDA National Agricultural Statistics Service, Census of Agriculture
+notes: |
+  The AgCensus landing page sits behind an Azure WAF JavaScript challenge: curl gets HTTP 403, so the link checker will likely report it blocked/unverifiable, not dead. Human-verified 2026-10-31 in headless Chromium (HTTP 200, page text confirms "taken only once every five years" and the 2022 Census). The 2022 publication index, https://www.nass.usda.gov/Publications/AgCensus/2022/index.php, answers curl with HTTP 200. Table-level data is also reachable through the Census Data Query Tool and Quick Stats.
+  Cadence is quinquennial (every five years; most recent 2022). The schema has no five-year value, so it is recorded as irregular.
