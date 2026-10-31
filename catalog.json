@@ -51,9 +51,9 @@
         "temporal": "multiple marketing years",
         "cadence": "monthly"
       },
-      "license": "unverified — no data license stated on the AMIS site; see the FAO Secretariat for reuse terms",
+      "license": "CC-BY-4.0 (AMIS Market Database notice; FAO Statistical Database Terms of Use, Annex 1)",
       "attribution": "Agricultural Market Information System (AMIS)",
-      "notes": "Human-verified 2026-10-31: HTTP 200 (redirects to /home). The site is JavaScript-rendered; headless Chromium shows the Market Monitor, a Market Database (Supply & Demand overview, Compare sources, Custom query at https://app.amis-outlook.org/#/market-database/...) and a Policy Database. The download format is assumed from the custom-query tool and should be confirmed by a steward. No license is stated, so none is claimed.\n"
+      "notes": "Human-verified 2026-10-31: HTTP 200 (redirects to /home). The site is JavaScript-rendered; headless Chromium shows the Market Monitor, a Market Database (Supply & Demand overview, Compare sources, Custom query at https://app.amis-outlook.org/#/market-database/...) and a Policy Database. The download format is assumed from the custom-query tool and should be confirmed by a steward.\nLicence checked 2026-10-31: the Supply & Demand overview (https://app.amis-outlook.org/#/market-database/supply-and-demand-overview) states \"This work is made available under the Creative Commons Attribution-4.0 International license (CC BY 4.0)\", and FAO's Statistical Database Terms of Use (https://www.fao.org/contact-us/terms/db-terms-of-use/en/) list \"Agricultural Market Information Systems (AMIS) – Market database\" in Annex 1. The database credits IGC and USDA-PSD as sources, and FAO's terms say third-party data may not be redistributed or reused without the original provider's consent.\n"
     },
     {
       "id": "eurostat-agriculture-database",
@@ -204,9 +204,9 @@
         "temporal": "1961-present annual; 1990-present monthly (base 2014-2016 = 100)",
         "cadence": "monthly"
       },
-      "license": "unverified — FAO copyright; the FFPI is not listed in the CC-BY-4.0 annex of FAO's Statistical Database Terms of Use",
+      "license": "unverified — the FFPI page states no licence; FAO's CC-BY-4.0 database terms cover its corporate statistical databases, and their Annex 1 lists examples only, without naming the FFPI",
       "attribution": "FAO, Food Price Index",
-      "notes": "Human-verified 2026-10-31: HTTP 200. Page lists the 2026 monthly release dates and the latest release (2 October 2026), with downloads as Excel (nominal and real indices, monthly from 1990 and annual from 1961) and CSV (nominal monthly from 1990). The license is left unverified on purpose because the FFPI does not appear in the database annex that grants CC BY 4.0.\n"
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page lists the 2026 monthly release dates and the latest release (2 October 2026), with downloads as Excel (nominal and real indices, monthly from 1990 and annual from 1961) and CSV (nominal monthly from 1990).\nLicence checked 2026-10-31: the FFPI page shows only \"© FAO 2026\" and FAO's general terms link. FAO's Statistical Database Terms of Use (https://www.fao.org/contact-us/terms/db-terms-of-use/en/) license \"all datasets disseminated through FAO corporate statistical databases (see examples in Annex 1)\" under CC BY 4.0 unless stated otherwise. Annex 1 is a list of examples, so the FFPI's absence from it does not exclude the index; but whether the FFPI counts as a corporate statistical database is not settled, so the licence stays unverified.\n"
     },
     {
       "id": "faostat",
