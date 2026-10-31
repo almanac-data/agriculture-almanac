@@ -1,0 +1,42 @@
+id: fao-food-price-index
+type: dataset
+title: FAO Food Price Index
+description: |
+  FAO's monthly measure of change in international prices of a basket of food commodities: the trade-weighted average of five commodity group indices (cereals, vegetable oils, dairy, meat, sugar), in nominal and real terms.
+publisher: Food and Agriculture Organization of the United Nations (FAO)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- prices
+- food-security
+- markets
+- global
+source:
+  canonical_url: https://www.fao.org/worldfoodsituation/foodpricesindex/en/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (international export prices)
+  temporal: 1961-present annual; 1990-present monthly (base 2014-2016 = 100)
+  cadence: monthly
+license: unverified — FAO copyright; the FFPI is not listed in the CC-BY-4.0 annex of FAO's Statistical Database Terms of Use
+attribution: FAO, Food Price Index
+notes: |
+  Human-verified 2026-10-31: HTTP 200. Page lists the 2026 monthly release dates and the latest release (2 October 2026), with downloads as Excel (nominal and real indices, monthly from 1990 and annual from 1961) and CSV (nominal monthly from 1990). The license is left unverified on purpose because the FFPI does not appear in the database annex that grants CC BY 4.0.
