@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 7,
+  "count": 8,
   "by_status": {
-    "live": 7
+    "live": 8
   },
   "entries": [
     {
@@ -54,6 +54,60 @@
       "license": "unverified — no data license stated on the AMIS site; see the FAO Secretariat for reuse terms",
       "attribution": "Agricultural Market Information System (AMIS)",
       "notes": "Human-verified 2026-10-31: HTTP 200 (redirects to /home). The site is JavaScript-rendered; headless Chromium shows the Market Monitor, a Market Database (Supply & Demand overview, Compare sources, Custom query at https://app.amis-outlook.org/#/market-database/...) and a Policy Database. The download format is assumed from the custom-query tool and should be confirmed by a steward. No license is stated, so none is claimed.\n"
+    },
+    {
+      "id": "eurostat-agriculture-database",
+      "type": "dataset",
+      "title": "Eurostat Agriculture Database",
+      "description": "Eurostat's official EU agricultural statistics — farm structure and agricultural census, crop and animal production, agricultural prices and economic accounts, and agri-environmental indicators — harmonised across EU member states.\n",
+      "publisher": "Eurostat (European Commission)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "production",
+        "farm-structure",
+        "prices",
+        "agri-environment",
+        "europe"
+      ],
+      "source": {
+        "canonical_url": "https://ec.europa.eu/eurostat/web/agriculture/database"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "sdmx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "EU member states (some EFTA and candidate countries); regional (NUTS) breakdowns for some tables",
+        "temporal": "varies by dataset",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
+      "attribution": "Eurostat",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page lists the Agriculture data navigation tree, agricultural census, and agri-environmental indicators. Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0 and states the ESS policy of free statistics regardless of use. API and bulk access go through Eurostat's general dissemination services.\nCadence varies by table, from monthly price series to the decennial agricultural census; recorded as irregular for the collection.\n"
     },
     {
       "id": "faostat",
