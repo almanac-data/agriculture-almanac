@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
     {
@@ -60,6 +60,56 @@
       "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
       "attribution": "FAO, FAOSTAT",
       "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "usda-fas-psd-online",
+      "type": "dataset",
+      "title": "USDA FAS Production, Supply and Distribution (PSD Online)",
+      "description": "USDA's official country-by-country estimates and forecasts of production, consumption, trade, and stocks for major agricultural commodities worldwide — the data behind the monthly WASDE and World Agricultural Production reports.\n",
+      "publisher": "U.S. Department of Agriculture, Foreign Agricultural Service (USDA FAS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "supply-and-demand",
+        "trade",
+        "stocks",
+        "forecasts",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://apps.fas.usda.gov/psdonline/app/index.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (country-level, as estimated by USDA)",
+        "temporal": "varies by commodity (decades of marketing years)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA Foreign Agricultural Service, Production, Supply and Distribution database",
+      "notes": "Human-verified 2026-10-31: app loads (HTTP 200); the Reports and Data view lists zipped CSV bulk downloads (e.g. https://apps.fas.usda.gov/psdonline/downloads/psd_alldata_csv.zip) and the release schedule. A US agency's estimates of global production, so jurisdiction is national (US) even though coverage is global.\n"
     }
   ]
 }
