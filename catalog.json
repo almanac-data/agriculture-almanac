@@ -110,7 +110,7 @@
       },
       "license": "public-domain (US Gov work)",
       "attribution": "USDA National Agricultural Statistics Service, Census of Agriculture",
-      "notes": "The AgCensus landing page sits behind an Azure WAF JavaScript challenge: curl gets HTTP 403, so the link checker will likely report it blocked/unverifiable, not dead. Human-verified 2026-10-31 in headless Chromium (HTTP 200, page text confirms \"taken only once every five years\" and the 2022 Census). The 2022 publication index, https://www.nass.usda.gov/Publications/AgCensus/2022/index.php, answers curl with HTTP 200. Table-level data is also reachable through the Census Data Query Tool and Quick Stats.\nCadence is quinquennial (every five years; most recent 2022). The schema has no five-year value, so it is recorded as irregular.\n"
+      "notes": "The AgCensus landing page sits behind an Azure WAF JavaScript challenge: a plain curl got HTTP 403, though scripts/check_links.py reported it ok (HTTP 200) the same day. If the probe later reports blocked, that is bot protection, not a dead link. Human-verified 2026-10-31 in headless Chromium (HTTP 200, page text confirms \"taken only once every five years\" and the 2022 Census). The 2022 publication index, https://www.nass.usda.gov/Publications/AgCensus/2022/index.php, answers curl with HTTP 200. Table-level data is also reachable through the Census Data Query Tool and Quick Stats.\nCadence is quinquennial (every five years; most recent 2022). The schema has no five-year value, so it is recorded as irregular.\n"
     }
   ]
 }
