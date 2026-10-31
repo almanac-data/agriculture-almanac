@@ -1,11 +1,60 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
+    {
+      "id": "amis-market-database",
+      "type": "dataset",
+      "title": "AMIS Market Database",
+      "description": "The G20 Agricultural Market Information System's database of supply-and-demand balances for wheat, maize, rice, and soybeans across the principal trading countries, letting users compare estimates from the major sources side by side.\n",
+      "publisher": "Agricultural Market Information System (AMIS), Secretariat hosted by FAO",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "supply-and-demand",
+        "grains",
+        "oilseeds",
+        "market-transparency",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://www.amis-outlook.org/"
+      },
+      "access": {
+        "method": [
+          "web"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "AMIS participating countries (principal producers and traders) and world totals",
+        "temporal": "multiple marketing years",
+        "cadence": "monthly"
+      },
+      "license": "unverified — no data license stated on the AMIS site; see the FAO Secretariat for reuse terms",
+      "attribution": "Agricultural Market Information System (AMIS)",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (redirects to /home). The site is JavaScript-rendered; headless Chromium shows the Market Monitor, a Market Database (Supply & Demand overview, Compare sources, Custom query at https://app.amis-outlook.org/#/market-database/...) and a Policy Database. The download format is assumed from the custom-query tool and should be confirmed by a steward. No license is stated, so none is claimed.\n"
+    },
     {
       "id": "faostat",
       "type": "dataset",
