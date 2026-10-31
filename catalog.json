@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 2,
+  "count": 5,
   "by_status": {
-    "live": 2
+    "live": 5
   },
   "entries": [
     {
@@ -62,6 +62,57 @@
       "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
     },
     {
+      "id": "usda-census-of-agriculture",
+      "type": "dataset",
+      "title": "USDA Census of Agriculture",
+      "description": "A complete count of U.S. farms and ranches and the people who operate them, taken every five years, covering land use and ownership, operator characteristics, production practices, income, and expenditures down to the county level.\n",
+      "publisher": "U.S. Department of Agriculture, National Agricultural Statistics Service (USDA NASS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "census",
+        "farms",
+        "land-use",
+        "producers",
+        "county-level"
+      ],
+      "source": {
+        "canonical_url": "https://www.nass.usda.gov/AgCensus/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "pdf",
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States, states, counties, and outlying areas",
+        "temporal": "1840-present (2002 and prior in the archived reports)",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA National Agricultural Statistics Service, Census of Agriculture",
+      "notes": "The AgCensus landing page sits behind an Azure WAF JavaScript challenge: a plain curl got HTTP 403, though scripts/check_links.py reported it ok (HTTP 200) the same day. If the probe later reports blocked, that is bot protection, not a dead link. Human-verified 2026-10-31 in headless Chromium (HTTP 200, page text confirms \"taken only once every five years\" and the 2022 Census). The 2022 publication index, https://www.nass.usda.gov/Publications/AgCensus/2022/index.php, answers curl with HTTP 200. Table-level data is also reachable through the Census Data Query Tool and Quick Stats.\nCadence is quinquennial (every five years; most recent 2022). The schema has no five-year value, so it is recorded as irregular.\n"
+    },
+    {
       "id": "usda-ers-farm-income-and-wealth-statistics",
       "type": "dataset",
       "title": "USDA ERS Farm Income and Wealth Statistics",
@@ -110,6 +161,109 @@
       "license": "public-domain (US Gov work)",
       "attribution": "USDA Economic Research Service, Farm Income and Wealth Statistics",
       "notes": "Human-verified 2026-10-31: HTTP 200 (the trailing-slash URL redirects to the slashless form). Page shows \"Updated: 9/3/2026\" and states the three-releases-per-year schedule.\nReleased three times a year (early February, late August/early September, late November/early December). The schema has no such value, so it is recorded as irregular.\n"
+    },
+    {
+      "id": "usda-fas-psd-online",
+      "type": "dataset",
+      "title": "USDA FAS Production, Supply and Distribution (PSD Online)",
+      "description": "USDA's official country-by-country estimates and forecasts of production, consumption, trade, and stocks for major agricultural commodities worldwide — the data behind the monthly WASDE and World Agricultural Production reports.\n",
+      "publisher": "U.S. Department of Agriculture, Foreign Agricultural Service (USDA FAS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "supply-and-demand",
+        "trade",
+        "stocks",
+        "forecasts",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://apps.fas.usda.gov/psdonline/app/index.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (country-level, as estimated by USDA)",
+        "temporal": "varies by commodity (decades of marketing years)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA Foreign Agricultural Service, Production, Supply and Distribution database",
+      "notes": "Human-verified 2026-10-31: app loads (HTTP 200); the Reports and Data view lists zipped CSV bulk downloads (e.g. https://apps.fas.usda.gov/psdonline/downloads/psd_alldata_csv.zip) and the release schedule. A US agency's estimates of global production, so jurisdiction is national (US) even though coverage is global.\n"
+    },
+    {
+      "id": "usda-nass-quick-stats",
+      "type": "dataset",
+      "title": "USDA NASS Quick Stats",
+      "description": "The National Agricultural Statistics Service's online database of official published aggregate estimates for U.S. agricultural production — crops, livestock, prices, demographics, and economics — at national, state, and county level, including Census of Agriculture results.\n",
+      "publisher": "U.S. Department of Agriculture, National Agricultural Statistics Service (USDA NASS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "production",
+        "crops",
+        "livestock",
+        "prices",
+        "county-level"
+      ],
+      "source": {
+        "canonical_url": "https://quickstats.nass.usda.gov/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "Web query tool is open; the Quick Stats API requires a free API key requested from the site.",
+        "rate_limit": "API returns at most 50,000 records per request (documented on the API page)."
+      },
+      "format": [
+        "csv",
+        "json",
+        "xml"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national, state, county; some sub-state districts)",
+        "temporal": "varies by series (historical series back to the 1800s for some commodities)",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "USDA National Agricultural Statistics Service, Quick Stats",
+      "notes": "Human-verified 2026-10-31: site and API documentation page load (HTTP 200 via curl). API page documents the free key and the 50,000-record limit per call.\nUpdated as each NASS report is released, so cadence is recorded as event.\n"
     }
   ]
 }
