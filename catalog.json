@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 8,
+  "count": 9,
   "by_status": {
-    "live": 8
+    "live": 9
   },
   "entries": [
     {
@@ -108,6 +108,55 @@
       "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
       "attribution": "Eurostat",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page lists the Agriculture data navigation tree, agricultural census, and agri-environmental indicators. Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0 and states the ESS policy of free statistics regardless of use. API and bulk access go through Eurostat's general dissemination services.\nCadence varies by table, from monthly price series to the decennial agricultural census; recorded as irregular for the collection.\n"
+    },
+    {
+      "id": "fao-aquastat",
+      "type": "dataset",
+      "title": "FAO AQUASTAT",
+      "description": "FAO's global information system on water and agriculture: country statistics on water resources, water withdrawal by sector, irrigation and drainage, and agricultural water management.\n",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "water",
+        "irrigation",
+        "water-use",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://www.fao.org/aquastat/en/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (country-level)",
+        "temporal": "varies by variable (five-year periods for many series)",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
+      "attribution": "FAO, AQUASTAT",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Data is served by the AQUASTAT Dissemination System at https://data.apps.fao.org/aquastat/ (HTTP 200, JavaScript-rendered). AQUASTAT is listed in Annex 1 of FAO's Statistical Database Terms of Use (https://www.fao.org/contact-us/terms/db-terms-of-use/en/), which licenses those databases CC BY 4.0. Download format assumed from the dissemination system; a steward should confirm.\n"
     },
     {
       "id": "faostat",
