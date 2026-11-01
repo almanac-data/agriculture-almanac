@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 11,
+  "count": 12,
   "by_status": {
-    "live": 11
+    "live": 12
   },
   "entries": [
     {
@@ -157,6 +157,54 @@
       "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
       "attribution": "FAO, AQUASTAT",
       "notes": "Human-verified 2026-10-31: HTTP 200. Data is served by the AQUASTAT Dissemination System at https://data.apps.fao.org/aquastat/ (HTTP 200, JavaScript-rendered). AQUASTAT is listed in Annex 1 of FAO's Statistical Database Terms of Use (https://www.fao.org/contact-us/terms/db-terms-of-use/en/), which licenses those databases CC BY 4.0. Download format assumed from the dissemination system; a steward should confirm.\n"
+    },
+    {
+      "id": "fao-fishstat",
+      "type": "dataset",
+      "title": "FAO FishStat (Fisheries and Aquaculture Statistics)",
+      "description": "FAO's global fishery and aquaculture statistics: capture and aquaculture production by country since 1950, aquatic trade, processed production, fishery food balance sheets and employment, distributed through the FishStatJ software workspaces and online query panels.\n",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "fisheries",
+        "aquaculture",
+        "production",
+        "trade",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://www.fao.org/fishery/fishstat/en"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (by country and FAO fishing area)",
+        "temporal": "production 1950-2024; trade and processed production 1976-2024; food balance sheets 1961-2021",
+        "cadence": "annual"
+      },
+      "license": "CC-BY-4.0 (FAO Statistical Database Terms of Use; FishStat listed in Annex 1)",
+      "attribution": "FAO. [year of last update]. FishStat: [name of dataset]. [Accessed on DD Month YYYY]. [URL] Licence: CC-BY-4.0.",
+      "notes": "Human-verified 2026-11-01: HTTP 200. The issue's URL https://www.fao.org/fishery/en/fishstat redirects to https://www.fao.org/fishery/fishstat/en, which is cataloged. The page says \"FAO FishStat is the leading source of global fishery and aquaculture statistics\" and its release calendar lists the FAO Yearbook with \"statistics up to 2024\" (September 2026), global employment data 1995-2024 (September 2026), and \"Aquaculture, Capture and Global production databases with data from 1950 to 2024\", accessible \"through the global production workspace at FishStatJ and on the online query panel\". FishStatJ is downloadable desktop software; the bulk method reflects that and the downloadable datasets, which I did not open, so no file formats are listed.\nLicence checked 2026-11-01: FAO's Statistical Database Terms of Use (https://www.fao.org/contact-us/terms/db-terms-of-use/en/) say \"Unless specified otherwise in their metadata or webpage, all datasets disseminated through FAO corporate statistical databases (see examples in Annex 1) are licensed under the Creative Commons Attribution-4.0 International licence (CC BY 4.0)\", with additional terms: no use \"in conjunction with the promotion of a commercial enterprise\", third-party data may carry other conditions, and a prescribed citation. Annex 1 names \"Fisheries and Aquaculture (FishStat)\". Per-dataset metadata was not checked for third-party exceptions; no API was checked.\n"
     },
     {
       "id": "fao-food-price-index",
