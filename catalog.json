@@ -1,9 +1,9 @@
 {
   "name": "Agriculture Almanac",
   "description": "An open, versioned index of public agriculture data.",
-  "count": 12,
+  "count": 13,
   "by_status": {
-    "live": 12
+    "live": 13
   },
   "entries": [
     {
@@ -310,6 +310,55 @@
       "license": "CC-BY-4.0 (FAO Statistical Databases terms)",
       "attribution": "FAO, FAOSTAT",
       "notes": "Verified reachable this session (HTTP 200). Bulk downloads available via FAOSTAT's own bulk-download API in addition to the interactive browser. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "fews-net",
+      "type": "dataset",
+      "title": "FEWS NET Food Security Data and Analysis",
+      "description": "The Famine Early Warning Systems Network's monitoring and projections of acute food insecurity: IPC-compatible food insecurity classifications by country and period, with markets and trade, agroclimatology, livelihood zone and boundary data, for the countries most at risk of famine.\n",
+      "publisher": "Famine Early Warning Systems Network (FEWS NET)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "food-security",
+        "famine",
+        "early-warning",
+        "ipc",
+        "at-risk"
+      ],
+      "source": {
+        "canonical_url": "https://fews.net/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": "The FEWS NET Data Explorer (fdw.fews.net) shows a sign-in screen; the classification files on fews.net were listed without one.",
+        "rate_limit": null
+      },
+      "format": [],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "about 30 monitored countries and regions in Africa, Asia, the Middle East and Latin America",
+        "temporal": "varies by series (projections to May 2027 seen)",
+        "cadence": "monthly"
+      },
+      "license": "unverified — FEWS NET's data use and attribution policy requires attribution and pass-through of the acknowledgement, but names no licence",
+      "attribution": "FEWS NET, with attribution as given in each dataset's metadata and a link to the FEWS NET website",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The home page reads \"Monitoring & forecasting acute food insecurity\", with featured reports dated October 2026, and its footer says \"The information provided on this Website is not official U.S. Government information and does not represent the views or positions of the U.S. Department of State or the U.S. Government.\" No notice about the reported 2025 shutdown or restoration appeared on the home page, the About page or the acute food insecurity data page; the site is up and current, and the footer now names the Department of State rather than USAID. The acute food insecurity page (https://fews.net/data/acute-food-insecurity) offers \"Download all acute food insecurity classification data\" and lists per-country file sets such as \"Cameroon Oct 2026 - May 2027 8 Files\". The FEWS NET Data Explorer at https://fdw.fews.net/data-explorer/ answered with a sign-in page. jurisdiction is recorded as US because FEWS NET is a US-government-funded network, though the site disclaims official status; a steward may prefer international-ngo.\nLicence checked 2026-11-01: the \"Data and information use and attribution policy\" (https://help.fews.net/fdp/data-and-information-use-and-attribution-policy) says \"If using data provided through the FEWS NET Wesbite in any way, direct or manipulated, you must include attribution for the data you use in the manner indicated in the metadata\", requires the same acknowledgement \"in any sub-licenses of the data that you grant\", says \"You may use our application programming interfaces\", and warns that third-party data (e.g. \"UN COMTRADE data, cannot be disseminated in any form without written permission\") carry their own terms. No named licence is given, so it is recorded as unverified. Not checked: file formats, the API, the start year of any series.\n"
     },
     {
       "id": "usda-census-of-agriculture",
