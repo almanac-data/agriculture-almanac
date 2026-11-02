@@ -41,7 +41,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.amis-outlook.org/",
@@ -97,7 +97,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://ec.europa.eu/eurostat/web/agriculture/database",
@@ -148,7 +148,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fao.org/aquastat/en/",
@@ -198,7 +198,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fao.org/fishery/fishstat/en",
@@ -250,7 +250,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/",
@@ -305,7 +305,7 @@
       "status_since": "2026-07-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fao.org/faostat/en/#data",
@@ -356,7 +356,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://fews.net/",
@@ -409,7 +409,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.nass.usda.gov/AgCensus/",
@@ -461,7 +461,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.ers.usda.gov/data-products/farm-income-and-wealth-statistics",
@@ -515,7 +515,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://apps.fas.usda.gov/psdonline/app/index.html",
@@ -570,7 +570,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://quickstats.nass.usda.gov/",
@@ -623,7 +623,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://websoilsurvey.nrcs.usda.gov/app/",
@@ -679,7 +679,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fna.usda.gov/pd/supplemental-nutrition-assistance-program-snap",
