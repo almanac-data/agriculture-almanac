@@ -38,6 +38,13 @@ observed:
   final_url: https://ec.europa.eu/eurostat/web/agriculture/database
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261019191237/https://ec.europa.eu/eurostat/web/agriculture/database
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-19'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: EU member states (some EFTA and candidate countries); regional (NUTS) breakdowns for some tables
   temporal: varies by dataset

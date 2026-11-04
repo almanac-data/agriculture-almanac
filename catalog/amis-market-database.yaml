@@ -33,6 +33,13 @@ observed:
   final_url: https://www.amis-outlook.org/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104212014/https://www.amis-outlook.org/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: AMIS participating countries (principal producers and traders) and world totals
   temporal: multiple marketing years
