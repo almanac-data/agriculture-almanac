@@ -33,6 +33,13 @@ observed:
   final_url: https://www.fao.org/fishery/fishstat/en
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261012151345/https://www.fao.org/fishery/fishstat/en
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-12'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: global (by country and FAO fishing area)
   temporal: production 1950-2024; trade and processed production 1976-2024; food balance sheets 1961-2021

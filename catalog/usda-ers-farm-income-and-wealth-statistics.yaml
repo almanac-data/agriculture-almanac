@@ -35,6 +35,13 @@ observed:
   redirect_chain:
   - http://www.ers.usda.gov/data-products/farm-income-and-wealth-statistics
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104214925/https://www.ers.usda.gov/data-products/farm-income-and-wealth-statistics/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: United States and states
   temporal: historical series plus current-year forecast
