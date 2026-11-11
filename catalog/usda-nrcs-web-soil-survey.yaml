@@ -37,6 +37,13 @@ observed:
   - https://websoilsurvey.nrcs.usda.gov/app
   - https://websoilsurvey.nrcs.usda.gov/app/
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20100527083415/https://websoilsurvey.nrcs.usda.gov/
+  authenticity: timestamped
+  permission: ok
+  captured: '2010-05-27'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: United States and territories (survey areas)
   temporal: current published soil survey data (refreshed annually)
